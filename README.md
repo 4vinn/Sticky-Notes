@@ -10,4 +10,4 @@ Heroku>https://app-sticky-notes.herokuapp.com/
 <br>
 <br>
 
-- Made package.json and index.php to deploy on heroku.
+- Made <b>package.json</b> and <b>index.php</b> to deploy on <b>HEROKU</b>.(used php buildpack)
