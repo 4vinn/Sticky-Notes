@@ -5,10 +5,26 @@
   margin: 0;
 }
 
-body{
+body {
   position: relative;
-  background-color:  #c68c53a8;
+  background: linear-gradient(-45deg, #3e3a56, #0b3b1c, #32143edf, #6c1522ea);
+  background-size: 10000% 10000%;
+  animation: gradient 20s ease infinite ;
   font-family: 'Architects Daughter', cursive;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  to {
+    background-position: 0 50%
+  }
 }
 
 button{
