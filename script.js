@@ -5,10 +5,11 @@ var index = 0;
 
 window.onload = document.querySelector("#user_input").select();
 
+//when clicked on add note buttn
 document.querySelector("#add_note").addEventListener("click", () => {
   document.querySelector("#modal").style.display = "block";
 });
-
+//when note box is closed
 document.querySelector("#hide").addEventListener("click", () => {
   document.querySelector("#modal").style.display = "none";
 });
@@ -17,8 +18,6 @@ document.querySelector("#user_input").addEventListener('keydown', (event) => {
   if(event.key === 'Enter'){
     const text = document.querySelector("#user_input");
     createStickyNote(text.value);
-    document.getElementById('user_input').value="";
- 
   }
   
 });
@@ -41,11 +40,29 @@ createStickyNote = (text) => {
 
   note.setAttribute("style", `margin:${random_margin[Math.floor(Math.random() * random_margin.length)]}; background-color:${random_colors[index++]}; transform:${random_degree[Math.floor(Math.random() * random_degree.length)]}`);
 
+  //when mouse hovers on a note
+  note.addEventListener("mouseenter", () => {
+    note.style.transform="scale(1.1)";
+  })
+  //when mouse stops hovering on a note
+  note.addEventListener("mouseleave", () => {
+    note.style.transform="scale(1)";
+    note.style.transform=rotate();
+    
+  })
+  //when doubled clicked on a note
   note.addEventListener("dblclick", () => {
     note.remove();
   })
 
+  
   document.querySelector("#all_notes").appendChild(note);
-}
+  
+  document.getElementById('user_input').value="";
 
+}
+//for mouseleave eventlistener
+function rotate(){
+  return random_degree[Math.floor(Math.random() * random_degree.length)]
+}
 
