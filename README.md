@@ -12,3 +12,4 @@ Heroku>https://app-sticky-notes.herokuapp.com/
 
 - Made <b>package.json</b> and <b>index.php</b> to deploy on <b>HEROKU</b>.(used php buildpack)
 - personal portfolio--chnage to Netlify's link in footer (gh pages not showing images)
+- use local storage to store data
