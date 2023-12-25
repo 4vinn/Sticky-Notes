@@ -4,7 +4,7 @@ HTML | CSS | JS
 <br>
 
 <b>Website:-</b><br>
-Github>https://vineet-jakhar.github.io/Sticky-Notes/
+Github>https://4vinn.github.io/Sticky-Notes/
 <br>
 Heroku>https://app-sticky-notes.herokuapp.com/
 <br>
