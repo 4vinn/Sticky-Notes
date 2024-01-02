@@ -1,6 +1,6 @@
-<h2> Sticky-Notes</h2>
+# Sticky Notes <img src="https://img.shields.io/badge/HTML-white?logo=html5&logoColor=red" /> <img src="https://img.shields.io/badge/CSS-white?logo=css3&logoColor=blue" />  <img src="https://img.shields.io/badge/JavaScript-white?logo=javascript&logoColor=yellow"/>
 
-HTML | CSS | JS 
+
 <br>
 
 <b>Website:-</b><br>
